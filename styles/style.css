@@ -1,0 +1,276 @@
+/* Global */
+body {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 2rem;
+    font-family: 'Titillium Web', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.social-media-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,
+a:focus,
+.color-blue,
+#main-section p>a,
+aside h3 {
+    color: #00b3e5;
+}
+
+button {
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Main Header Components */
+#main-header {
+    grid-area: 1 / 2 / 2 / 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-header>div {
+    width: 26.9%
+}
+
+#main-header>h1 {
+    width: 42.2%;
+    font-size: 3.5rem;
+}
+
+#main-header>button {
+    width: 26.9%;
+    height: 2rem;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #00b3e5;
+}
+
+/* Sticky Nav Components */
+#sticky-nav {
+    grid-area: 2 / 1 / 3 / 5;
+    height: 2rem;
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid black 1px;
+    background-color: white;
+    z-index: 1;
+}
+
+#sticky-nav>ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sticky-nav a {
+    font-size: 1.125rem;
+}
+
+.nav-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Main Section Components */
+#main-section {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#main-section h2 {
+    font-size: 3rem;
+}
+
+#main-section ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#main-section p {
+    font-family: "PT Serif",Georgia,serif;
+    color: rgb(77,77,77);
+}
+
+/* Aside Components */
+aside {
+    grid-area: 3 / 3 / 5 / 4;
+    position: sticky;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+aside ul {
+    display: flex;
+    justify-content: stretch;
+    gap: 0.2rem;
+}
+
+aside button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+aside button:hover {
+    background-color: #ccc;
+}
+
+aside button:focus {
+    color: white;
+    background-color: #00b3e5;
+}
+
+aside ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+aside ol li {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #f5f5f5;
+}
+
+aside ol a {
+    color: #555;
+}
+
+/* Subscribe Section Components */
+#subscribe-section {
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#subscribe-section ul, #subscribe-section div {
+    display: flex;
+    gap: 1rem;
+}
+
+#subscribe-section>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#subscribe-section button {
+    width: 12rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+#subscribe-sub-btn {
+    background-color: #00b3e5;
+}
+
+#subscribe-view-btn {
+    background-color: #20b2aa;
+}
+
+#subscribe-buy-btn {
+    background-color: #ff0000;
+}
+
+/* Additional Articles Components */
+#additional-articles {
+    grid-area: 5 / 2 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+#additional-articles>article {
+    display: flex;
+    gap: 1rem;
+}
+
+.sub-article-image {
+    width: 15rem;
+    height: 8rem;
+}
+
+/* Footer Components */
+footer {
+    grid-area: 6 / 1 / 7 / 5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+#footer-sub {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#footer-sub>h3 {
+    font-size: 1.5rem;
+}
+
+#footer-sub>span {
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsiveness */
+/* @media screen and (max-width:768px) {
+    body {
+        grid-template-rows: repeat(7, auto);
+        grid-template-columns: 1fr;
+    }
+    #main-header {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #sticky-nav {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #main-section {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    aside {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    #subscribe-section {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #additional-articles {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    footer {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+} */
