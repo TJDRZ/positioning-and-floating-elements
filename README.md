@@ -2,4 +2,6 @@
 
 ## The "Positioning and Floating Elements" project on The Odin Project
 
+(Used Grid and Flexbox, despite the name lol)
+
 https://www.newscientist.com/article/2286218-ancient-lake-in-marss-gale-crater-may-have-actually-been-a-small-pond/
